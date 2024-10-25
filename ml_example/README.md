@@ -16,10 +16,10 @@ The signSGD example works outside of dependent rounding (too slow to be run ever
 
 ## STRUCTURE
 
-ml_example
+'''ml_example
 +-- example_lottery_ticket.sh   # Example scripts to run for Lottery Ticket testing
 +-- example_signsgd.sh          # Example scripts to run for SignSGD testing
 +-- example.py                  # Full example implementations
 +-- LICENSE.txt                 # License from Uber paper
 +-- lottery_ticket_pruner.py    # Pruning utils
-+-- README.md                   # README
++-- README.md                   # README'''

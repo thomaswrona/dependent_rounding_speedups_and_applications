@@ -40,7 +40,7 @@ The primary case for dependent rounding is random assignment (e.g. scheduling) f
 
 ## STRUCTURE
 
-.
+'''.
 +-- cpp_src                                         # Source for C++ rounding functions
 |   +-- dependent.cpp                               # Dependent rounding C++
 |   +-- dependent.h                                 #
@@ -65,4 +65,4 @@ The primary case for dependent rounding is random assignment (e.g. scheduling) f
 |   +-- setup.py                                    # setup file for module
 +-- .gitignore                                      # gitignore
 +-- LICENSE.txt                                     # MIT License
-+-- README.md                                       # README
++-- README.md                                       # README'''
