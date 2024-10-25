@@ -91,8 +91,7 @@ def stochastic_sparsification(layer, distribution_method = None,
                                              distribution_method,
                                              use_quantiles,
                                              sparsification_level),
-                        method = "stochastic", 
-                        resolution = resolution) * layer
+                        method = "stochastic") * layer
 
 def dependent_sparsification(layer, distribution_method = None,
                              use_quantiles = False, sparsification_level = 0.5,
