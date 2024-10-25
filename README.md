@@ -12,7 +12,9 @@ The primary case for dependent rounding is random assignment (e.g. scheduling) f
 
 1. Clone
 
+    ```
     git clone https://github.com/thomaswrona/dependent_rounding_speedups_and_applications.git
+    ```
 
 2. Get dependencies for C++ code
 
@@ -20,22 +22,54 @@ The primary case for dependent rounding is random assignment (e.g. scheduling) f
 
 3. Create shared object
 
+    Install a C++ compiler.
+
     Use command similar to (can change desired compiler, use -Os instead of -O3, etc.):
+
+    ```
+    cd dependent_rounding_speedups_and_applications
+
     g++ -pthread -std=c++17 -g ./cpp_src/round_util.cpp ./cpp_src/dependent.cpp ./cpp_src/standard.cpp ./cpp_src/stochastic.cpp -shared -fPIC -O3 -o ./py_src/dependent.so
+    ```
 
 4. Get dependencies for Python module
 
+    If you do not care about virtual environments, just install numpy and what is needed to run a Jupyter notebook, if desired. Otherwise:
+
+    Install pip.
+
+    Install venv.
+
+    ```
+    python3 -m venv my-venv
+    
+    source my-venv/bin/activate
+    
+    pip install ipykernel
+    
+    python -m ipykernel install --user --name=my-venv
+
+    pip install jupyter
+
     pip install numpy
+    
+    ```
 
-5. Install Python module
+5. Install Python module in editing mode
 
-    pip install ./py_src
-    or, for editing mode,
+    ```
     pip install -e ./py_src
+    ```
 
 6. Test
 
     Easiest way to test is to run one of the Jupyter notebooks.
+
+    ```
+    jupyter notebook password
+
+    jupyter notebook
+    ```
 
 
 ## STRUCTURE

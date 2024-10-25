@@ -8,11 +8,14 @@ The signSGD example works outside of dependent rounding (too slow to be run ever
 
 1. Get extra dependencies
 
+    ```
+    pip install pandas
     pip install tf
+    ```
 
 2. Test
 
-    Run one of the commands from the shell script to test.
+    Run one of the commands from the shell script to test. Most of the commands in the .sh files are what I used to collect data.
 
 ## STRUCTURE
 
